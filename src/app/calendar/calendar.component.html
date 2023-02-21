@@ -1,3 +1,24 @@
+<h1>Liste des événements</h1>
+
+<!--<div>
+  <label for="hour-filter">Filtrer par heure :</label>
+  <select id="hour-filter" (change)="onHourFilterChanged($event.target.value)">
+    <option value="">Toutes les heures</option>
+    <option value="0">00h</option>
+    <option value="1">01h</option>
+    <option value="2">02h</option>
+    <option value="3">03h</option>
+    <option value="4">04h</option>
+    <option value="5">05h</option>
+    <option value="6">06h</option>
+    <option value="7">07h</option>
+    <option value="8">08h</option>
+    <option value="9">09h</option>
+    <option value="10">10h</option>
+    <option value="11">11</option>
+  </select>
+</div> -->
+
 <table>
   <thead>
   <tr>
@@ -9,7 +30,7 @@
   <tbody>
   <tr *ngFor="let event of events">
     <td>{{ event.title }}</td>
-    <td>{{ event.time | date }}</td>
+    <td>{{ event.time | date : 'short'}}</td>
     <td>{{ event.type }}</td>
   </tr>
   </tbody>

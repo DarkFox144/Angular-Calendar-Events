@@ -1,0 +1,19 @@
+<h1>Ajouter un événement</h1>
+
+<form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="title">Titre :</label>
+    <input type="text" id="title" formControlName="title">
+  </div>
+  <div>
+    <label for="date">Date :</label>
+    <input type="date" id="date" formControlName="date">
+  </div>
+  <div>
+    <label for="type">Type :</label>
+    <textarea id="type" formControlName="type"></textarea>
+  </div>
+  <button type="submit">Ajouter</button>
+  <button type="button" (click)="onCancel()">Annuler</button>
+</form>
+

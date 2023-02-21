@@ -21,4 +21,8 @@ export class CalendarComponent implements OnInit {
     );
   }
 
+  onHourFilterChanged(value: any) {
+
+  }
+
 }
